@@ -1,11 +1,16 @@
 #lang slideshow/widescreen
 
 (require slideshow/text
-	 pict/color)
+	 pict/color
+	 net/sendurl)
 
+
+(define (link text url)
+  (clickback (blue (t text))
+	     (lambda () (send-url url))))
 
 (define (subpara elm)
-  (para elm))
+  (scale (para elm) 0.8))
 
 (define (quote-slide text author)
   (slide
@@ -486,13 +491,16 @@
 	   
 	   (slide
 	    #:title "Contact"
-	    (para "Mastodon: @tealeg@mastodon.online")
-	    (para "GitHub: https://github.com/tealeg/")
-	    (para "LinkedIn: https://www.linkedin.com/in/geoffteale")
-	    (para "WWW:")
-	    (subpara "https://teale.de")
-	    (subpara "https://upvest.co")
-	    (subpara "https://engineering.upvest.co")
+	    (item "Mastodon:")
+	    (subitem (link "@tealeg@mastodon.online" "https://mastodon.online/@tealeg"))
+	    (item  "GitHub: ")
+	    (subitem (link "https://github.com/tealeg/" "https://github.com/tealeg/"))
+	    (item "LinkedIn: ")
+	    (subitem (link "https://www.linkedin.com/in/geoffteale" "https://www.linkedin.com/in/geoffteale"))
+	    (item "WWW:")
+	    (subitem (link "https://teale.de" "https://teale.de"))
+	    (subitem (link "https://upvest.co" "https://upvest.co"))
+	    (subitem (link "https://engineering.upvest.co" "https://engineering.upvest.co"))
 	    )
 	   
 	   ) ;; with-font
