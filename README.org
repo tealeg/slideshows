@@ -1,3 +1,43 @@
 * Slideshows
 
 This repository contains a collection of slideshows I use for presentations, constructed in the [[https://docs.racket-lang.org/slideshow/index.html]["Slideshow"]] language within [[https://racket-lang.org/][Racket]].
+
+* Viewing these presentations locally
+
+these presentations are defined in code.  They use a language called
+[[https://docs.racket-lang.org/slideshow/index.html]["Slideshow"]] that is implemented in terms of [[https://racket-lang.org/][Racket]] (a language
+oriented programming language).  It's likely you haven't seen a
+presentation in this format before, so it's worth me giving you some
+guidance on how to get started.
+
+** Installing Racket
+
+As this varies from platform to platform, I'll let you explore
+yourself.  It's highly likely Racket exists in your package manager,
+is certainly does in Homebrew for Mac and for most mainstream Linux
+and BSD distributions.  If all else fails head [[https://download.racket-lang.org/][here]] and download it
+directly.
+
+** Installing slideshow
+
+Racket has a built in package manager.  To install the slideshow language you'll need to run:
+
+#+BEGIN_SRC sh
+raco pkg install slideshow
+#+END_SRC
+
+Answer any questions with a "Y" and all should run fine.
+
+** Running the slideshow
+
+From within the directory of a given presentation, simply run:
+
+#+BEGIN_SRC sh
+raco slideshow ./slideshow.rkt
+#+END_SRC
+
+If you'd like to adjust the way the slideshow is presented, explore the options by issuing the following command:
+
+#+BEGIN_SRC sh
+raco slideshow --help
+#+END_SRC
