@@ -420,7 +420,7 @@
 	   (slide
 	    (para "Example: Use case driven documentation:")
 	    'next
-	    (subpara "https://diataxis.fr")
+	    (subpara (link "https://diataxis.fr" "https://diataxis.fr"))
 	    'next
 	    (subpara "Tutorial (First steps)")
 	    'next
@@ -472,17 +472,27 @@
 	    "superstition.jpg"
 	    "Stevie Wonder"
 	    "Measure twice, cut once")
+	   (engineer-slide "Empathy: Set an engineer to catch an engineer")
 	   (dichotemy-slide
 	    "Measuring"
-	    "Customer feedback is a powerful tool. Check your NPS scores."
-	    "Look for slow spots on the ski-jump, frustrated developers are there!")
-	   (statement-slide "Create a virtuous circle")
+	    "Look for slow spots on the ski-jump, frustrated developers are there!"
+	    "Customer feedback is a powerful tool. Check your NPS scores.")
+	   (slide
+	     #:title "Create a virtuous circle"
+	     (para "Every issue that makes it to support should result in a mitigation that prevents that happening again."))
+	   
 
+	   (audience-slide "Where can I find these slides?")
+
+	   (slide
+	    (t "The slides are available here:")
+	    (link "https://github.com/tealeg/slideshows/tree/main/80-percent-of-dx-in-20-minutes" "https://github.com/tealeg/slideshows/tree/main/80-percent-of-dx-in-20-minutes"))
+	   
 	   (audience-slide "Do you have a playlist with those songs?")
 	   
 	   (slide
 	    (t "The playlist is available here:")
-	    (hyperlinkize (t "https://open.spotify.com/playlist/79iNeBWnj1OhgnlDcMJ7nQ?si=3977ea3db89e4e68")))
+	    (link "https://open.spotify.com/playlist/79iNeBWnj1OhgnlDcMJ7nQ?si=3977ea3db89e4e68" "https://open.spotify.com/playlist/79iNeBWnj1OhgnlDcMJ7nQ?si=3977ea3db89e4e68"))
 	   
 	   (statement-slide "End of Presentation!")
 
