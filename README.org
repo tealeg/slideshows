@@ -1,0 +1,3 @@
+* Slideshows
+
+This repository contains a collection of slideshows I use for presentations, constructed in the [[https://docs.racket-lang.org/slideshow/index.html]["Slideshow"]] language within [[https://racket-lang.org/][Racket]].

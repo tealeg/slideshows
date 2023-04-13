@@ -1,0 +1,49 @@
+* 80% of DevX in 20 Minutes
+
+This presentation is an attempt by me to compress the essence of a 1
+hour presentation on my approach to DevX, into 20 minutes.
+
+20 minutes is an aspiration, 80% coverage is also an aspiration.  In
+reality it's likely to be more like a 30 minute presentation, and
+cover more like 50% of the original scope.  It's good to set yourself stretch goals.
+
+* Viewing this presentation locally
+
+This presentation is defined in code.  It uses a language called
+[[https://docs.racket-lang.org/slideshow/index.html]["Slideshow"]] that it implemented in terms of [[https://racket-lang.org/][Racket]] (a language
+oriented programming language).  It's likely you haven't seen a
+presentation in this format before, so it's worth me giving you some
+guidance on how to get started.
+
+** Installing Racket
+
+As this varies from platform to platform, I'll let you explore
+yourself.  It's highly likely Racket exists in your package manager,
+is certainly does in Homebrew for Mac and for most mainstream Linux
+and BSD distributions.  If all else fails head [[https://download.racket-lang.org/][here]] and download it
+directly.
+
+** Installing slideshow
+
+Racket has a built in package manager.  To install the slideshow language you'll need to run:
+
+#+BEGIN_SRC sh
+raco pkg install slideshow
+#+END_SRC
+
+Answer any questions with a "Y" and all should run fine.
+
+** Running the slideshow
+
+From within this directory, simply run:
+
+#+BEGIN_SRC sh
+raco slideshow ./slideshow.rkt
+#+END_SRC
+
+If you'd like to adjust the way the slideshow is presented, explore the options by issuing the following command:
+
+#+BEGIN_SRC sh
+raco slideshow --help
+#+END_SRC
+
