@@ -23,7 +23,7 @@
      'next
      (para text)
      'next
-     (para "End of presentation"))))
+     (para "End of presentation?"))))
 
 (define (statement-slide text)
   (slide
@@ -65,7 +65,7 @@
 	       (orange (para text)))))
 
 (define (lyric-quiz lyric file artist rule)
-    (statement-slide "Name the song!")
+    (statement-slide "Name the original artist/band!")
     (statement-slide  (format "~s" lyric))
     (slide
 	    (scale (bitmap file) 0.3)
@@ -73,7 +73,7 @@
 
     (statement-slide rule))
 
-(with-font "Futura"
+(with-font "IBM Plex Sans"
 	   (slide
 	    (with-size 80
 		       (bt "80% of DevX in 20 minutes"))
@@ -178,7 +178,7 @@
 	   
 	   (definition-slide "We have some vague scope that is shared with other teams. Sometimes it involves customers, sometimes it involves internal engineers, but rarely both.")
 
-	   (engineers-slide "Geoff, what do you actually do?")
+	   (engineer-slide "Geoff, what do you actually do?")
 
 	   (slide
 	    #:title "Define DevX!"
@@ -205,13 +205,15 @@
 
 	   (statement-slide "Pop quiz!")
 
-	   (statement-slide "When experiencing an issue, 60% of people prefer one type of support, what is it?")
+	   (statement-slide "60% of people prefer one model of customer service, what is it?")
 	   (slide
-	    (with-size 128 (t "Self-service")))
+	    (with-size 64 (t "Online self-service"))
+	    (t "American Express Customer Services Barometer"))
 
-	   (statement-slide "What percentage of people will take their business elsewhere, rather than seek support, if they encounter a poorly curated online experience?")
+	   (statement-slide "What percentage of people will take their business elsewhere, rather than seek further support, after a poor experience?")
 
-	   (slide (with-size 256 (t "48%")))
+	   (slide (with-size 256 (t "33%"))
+		  (t "American Express Customer Services Barometer"))
 
 	   (statement-slide "How many people in this room are using my football-score prediction game?")
 
@@ -264,8 +266,7 @@
 	      'next
 	      (item "Reduce lag and effort for engineers")
 	      'next
-	      (subitem "Engineers want to get rid of their slowest feedback loop.")
-	      (subitem "That breaks the money printer")
+	      (subitem "Engineers find a way to remove their slowest feedback loop.")
 	      'next
 	      (item "Make our product as self-service as possible")
 	      'next
@@ -273,7 +274,7 @@
 	      'next
 	      (item "Help our customers reach their goals")
 	      'next
-	      (subitem "Money printer go brr brr brr"))
+	      (subitem ".. because money"))
 	    
 	   (audience-slide "Where are you going with this?")
 
@@ -283,7 +284,7 @@
 	   (slide
 	    (scale
 	     (bitmap "slope.jpeg") 0.4)
-	    (t "The ol' Tea-leg's Ski-Jump"))
+	    (t "Tea-leg's Ski-Jump"))
 
 	   (slide
 	    (scale
@@ -305,7 +306,19 @@
 	   (slide
 	    (scale
 	     (bitmap "slope.jpeg") 0.4)
+	    (t "Everything the engineer wanted is a subset of 'Product'"))
+
+	   (slide
+	    (scale
+	     (bitmap "slope.jpeg") 0.4)
+	    (t "Everything the sales-director wanted is in 'Support'"))
+	   
+
+	   (slide
+	    (scale
+	     (bitmap "slope.jpeg") 0.4)
 	    (t "Everything apart from 'Product' and 'Support' is about communication"))
+
 	   
 	   (audience-slide "What happens if we fail to Motivate?")
 	   
@@ -357,10 +370,10 @@
 	   (statement-slide "The grass is always greener where you water it!")
 
 	   (lyric-quiz
-	    "I find it hard, it's hard to find, oh well, whatever, nevermind"
+	    "I find it hard, it's hard to find"
 	    "i-find-it-hard.jpg"
 	    "Nirvana"
-	    "Nothing is *done* until its documented")
+	    "Nothing is *done* until it is documented")
 	   (slide
 	    (para "Most of DevX is about getting knowledge into people's heads")
 	    'next
@@ -378,17 +391,27 @@
 	    "Product quality is a DevX issue")
 	   (slide
 	    (para "This encompasses (at least):")
-	    (subpara "UX")
+	    'next
+	    (subpara "Representing developers as stakeholders")
+	    'next
+	    (subpara "Developer specific UX")
+	    'next
 	    (subpara "Release Management")
-	    (subpara "Documentation/Materials match released code")
-	    (subpara "Sandboxes"))
+	    'next
+	    (subpara "Testing of Documentation/Materials"))
 
 	   (lyric-quiz
 	    "...if you try sometimes, you'll find, you get what you need."
 	    "what-you-need.jpg"
 	    "Rolling Stones"
-	    "Meet use cases with documentation")
+	    "Take a stance")
+	   
+	   (statement-slide "Good experiences result from good design")
+	   (statement-slide "Good design requires expertise and thought")
+	   (statement-slide "The customer is *not* always right")
 	   (slide
+	    (para "Example: Use case driven documentation:")
+	    'next
 	    (subpara "https://diataxis.fr")
 	    'next
 	    (subpara "Tutorial (First steps)")
@@ -436,7 +459,6 @@
 	    "Taking time and care with people impresses them."
 	    "Self-service means support is a rare and pleasurable experience.")
 
-
 	   (lyric-quiz
 	    "When you believe in things you don't understand, then you suffer"
 	    "superstition.jpg"
@@ -446,10 +468,15 @@
 	    "Measuring"
 	    "Customer feedback is a powerful tool. Check your NPS scores."
 	    "Look for slow spots on the ski-jump, frustrated developers are there!")
+	   (statement-slide "Create a virtuous circle")
+
+	   (audience-slide "Do you have a playlist with those songs?")
 	   
-	    
+	   (slide
+	    (t "The playlist is available here:")
+	    (hyperlinkize (t "https://open.spotify.com/playlist/79iNeBWnj1OhgnlDcMJ7nQ?si=3977ea3db89e4e68")))
 	   
-	   (statement-slide "End of Presentation")
+	   (statement-slide "End of Presentation!")
 
 
 	   
