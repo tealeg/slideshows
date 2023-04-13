@@ -37,13 +37,13 @@
 (define (dichotemy-slide title engineer sales)
   (list (slide
 	 #:title title
-	 (scale (bitmap "Engineer.jpg") 0.1)
+	 (scale (bitmap "Engineer.jpg") 0.2)
 	 (para "The well-meaning engineer:")
 	 'next
 	 (orange (subpara engineer)))
 	(slide
 	 #:title title
-	 (scale (bitmap "salesman.png") 0.1)
+	 (scale (bitmap "salesman.png") 0.2)
 	 (para "The well-meaning sales director:")
 	 'next
 	 (purple (subpara sales)))))
@@ -51,7 +51,7 @@
 (define (salesman-slide text)
      (with-size 48
 		(slide
-		 (scale (bitmap "salesman.png") 0.1)
+		 (scale (bitmap "salesman.png") 0.2)
 		 (para "The well-meaning sales director")
 		 'next
 		 (purple (para text)))))
@@ -59,7 +59,7 @@
 (define (engineer-slide text)
    (with-size 48
 	      (slide
-	       (scale (bitmap "Engineer.jpg") 0.1)
+	       (scale (bitmap "Engineer.jpg") 0.2)
 	       (para "The well-meaning engineer")
 	       'next
 	       (orange (para text)))))
@@ -68,7 +68,7 @@
     (statement-slide "Name the original artist/band!")
     (statement-slide  (format "~s" lyric))
     (slide
-	    (scale (bitmap file) 0.3)
+	    (scale (bitmap file) 0.4)
 	    (t (format "The ~a Rule" artist)))
 
     (statement-slide rule))
@@ -147,7 +147,7 @@
 	   
 	   (definition-slide "DevX is a field in which we mainly talk about what DevX is.")
 
-	   (audience-slide "That's not funny Geoff")
+	   (audience-slide "That's not funny, Geoff")
 
 	   (salesman-slide "Isn't DevX like UX for engineers?")
 
@@ -157,16 +157,13 @@
 	   (statement-slide "Except some UX folks say it's the other way around.")
 
 	   (engineer-slide "Gottfried Koromandelzwergglanzente")
-	   (salesman-slide "Gottfried Koromandelzwergglanzente")
-
-	   (engineer-slide "Geoffrey Teale")
 	   (salesman-slide "Geoffrey Teale")
 
 	   (statement-slide "Turns out what's easy is subjective and context specific")
 
 	   (statement-slide "DevX isn't UX in the sense most people mean")
 
-	   (audience-slide "Another blind alley")
+	   (audience-slide "Another blind alley!")
 
 	   (audience-slide "What now?")
 	   (engineer-slide "What's the scope of DevX work?")
@@ -289,7 +286,7 @@
 	   (slide
 	    (scale
 	     (bitmap "slope.jpeg") 0.4)
-	    (t "The most general model of a developers journey"))
+	    (t "The most general model of a developer experience"))
 
 	   (slide
 	    (scale
@@ -319,6 +316,7 @@
 	     (bitmap "slope.jpeg") 0.4)
 	    (t "Everything apart from 'Product' and 'Support' is about communication"))
 
+	   (statement-slide "Timely and concise communication of complex ideas.")
 	   
 	   (audience-slide "What happens if we fail to Motivate?")
 	   
@@ -336,15 +334,20 @@
 	   (audience-slide "This is a huge scope!")
 	   (slide
 	    (scale (bitmap "overlapping-magesteria.png") 0.3)
-	    'next
 	    (t "Yes.  You cannot do this alone.")
 	    'next
-	   (t "You need allies."))
+	    (t "You need allies."))
 
 	   (definition-slide "DevX is a field in which we mainly talk about what DevX is.")
 
-	   (statement-slide "This is the first step.")
+	   (statement-slide "No, but this is the first step.")
 
+	   (statement-slide "Every other team you interact with needs to understand the mission")
+
+	   (definition-slide "DevX is the guardian of developers as stakeholders at all stages of product development and delivery.  It ensures developers needs are met well and their projects are swift and successful.")
+
+	   (statement-slide "This might be it")
+	   
 	   (audience-slide "How do you remember all the things?")
 
 	   (statement-slide "Glad you asked..")
