@@ -1,0 +1,85 @@
+* Open Source
+
+** Intro 
+*** Who am I
+- Name
+- Role
+*** My journey with open source
+**** 1983-1994
+- Hobby 
+- Sinclair ZX Spectrum 48k, Commodore Amiga 500, 1500+
+- Reading and typing in program listings from magazines
+- Summer job at a Nuclear Powerstation - IBM OS/2 Warp
+- Some DOS and Windows at school
+**** 1994-1998
+- Hobby / Student
+- Gateway 2000 PC, Corona PC, BeBox
+- First encounter with Windows NT, 95
+- First encounter with UNIX (Digital UNIX)
+- First encounter with Linux (Red Hat 0.9 "Halloween")
+- BeOS 
+- Early web development (Source was always available)
+**** 1998-2000
+- Rentokil Initial
+- At home I ran Linux, FreeBSD and BeOS
+- Experiment with S.u.S.E. - Scared the hell out of Ben Godwin
+- Pilot project to replace SCO UNIXware with Mandrake Linux
+**** 2000-2002
+- Thomson Reuters
+- All kinds of everything
+- Had my first Linux laptop, a Sony Vaio PCG-F801A
+- Learned Python, Ruby and Java
+
+
+** "IT isn't our core competence"
+- Used to hear this a lot back in the day
+- Favours buy over build
+... but ...
+- Open Source project offer us:
+  - Share the IT competence with many others, not just one vendor
+     - Use solutions engineered and maintained by Google, IBM, Amazon, etc..
+  - Build competence, and understanding
+  - Attract better candidates
+
+** You're already using open source software
+- Stevie Wonder rule
+- Citrix Thin Clients
+- Android
+- iOS, Mac OS X, Windows all ship we OSS elements
+- Linux servers
+- Cloud infrastructure / platforms
+- Browsers (Chromium, Firefox) 
+- Routers, phones, networking within the company, WAN/Telecoms 
+- The Internet
+** Competitive space
+
+
+
+** Types of Open Source
+*** Free Software vs Open Source
+- Politics vs Pragmatics
+**** Licenses
+***** MIT / BSD / Apache / Artistic .. etc..
+ - nice and simple
+***** GPL
+ - lots of FUD
+ - understanding the importance of acts of distribution
+ - understanding the importance of binary linking vs loading data (why aren't all python programs GPL?) 
+
+*** Open Core commercial model
+*** Commercially supported open source
+*** Shared Source and other fudges
+
+** Practical tips for doing open source
+*** Using
+**** How and where to get it
+**** Getting support
+**** Being part of a community
+- codes of conduct
+*** Modifying
+**** Legal
+
+- Contributer agreements / Copyright assignment
+**** When do you need to fork
+**** Making small changes
+**** Making big changes

@@ -1,0 +1,49 @@
+#+TITLE: The Stevie Wonder Rule
+#+SUBTITLE: What rock 'n' roll can teach us about software development
+
+* The Eagles rules
+#+BEGIN_QUOTE 
+"Relax," said the night man
+"We are programmed to receive
+You can check-out any time you like
+But you can never leave!
+#+END_QUOTE
+-- The Eagles, "Hotel California", 1977
+
+Don't code too late at night..
+
+* The Frank Zappa rule
+#+BEGIN_QUOTE
+Your mind is totally controlled,
+It has been stuffed into my mould,
+And you will do as you are told,
+Until the rights to you are sold
+#+END_QUOTE
+-- Frank Zappa, "I'm the slime", 1973
+
+Don't adopt a technology because a big company is using it.
+
+* The Billy Bragg rule
+
+"I went out drinking with Thomas Paine,
+He told me that all revolutions are not the same. 
+They're as different as the people,
+Who give them birth
+For no one idea,
+Can solve every problem on Earth"
+-- Billy Bragg, "North Sea Bubble", 1991
+
+.. to use a 2nd quote:
+
+"you can borrow ideas, but you can't borrow situations".
+
+Basically, you can't just take ideas from others and apply them
+blankly, use them as inspiration, but understand them and build your
+own solutions that fit your own problems.
+
+* The Stevie Wonder Rule
+"When you believe in things that you don't understand,
+Then you suffer"
+ -- Stevie Wonder, Superstition, 1972
+
+- Be empirical 
