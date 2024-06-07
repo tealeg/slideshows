@@ -7,4 +7,7 @@ hour presentation on my approach to DevX, into 20 minutes.
 reality it's likely to be more like a 30 minute presentation, and
 cover more like 50% of the original scope.  It's good to set yourself stretch goals.
 
+** Relevant resources
+
+[[https://www.linkedin.com/pulse/108-do-all-sap-implementation-projects-fail-why-nieto-rodriguez-uvmuf][[Do all SAP implementation projects fail? Why?]] ([[./108# - Do all SAP implementation projects fail_ Why_.pdf][PDF version]])
 
